@@ -3,21 +3,157 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AxelDev Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Axel Dev Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="static/images/favicon.ico" />
 </head>
-<body>
-  <header>
-    <h1>Welcome to AxelDev</h1>
-    <nav>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="blog/index.html">Blog</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+ <!-- Header Section -->
+<header class="bg-blue-700 text-white shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+      <!-- Logo/Brand -->
+      <a href="index.html" class="text-2xl font-bold tracking-tight">AxelDevLab</a>
+  
+      <!-- Search Bar (Desktop) -->
+      <div class="hidden md:flex items-center space-x-2">
+        <input
+          type="text"
+          placeholder="Search..."
+          class="rounded-md px-3 py-1 text-black focus:outline-none focus:ring-2 focus:ring-blue-300"
+        />
+        <button class="bg-white text-blue-700 px-3 py-1 rounded-md hover:bg-gray-200">
+          Search
+        </button>
+      </div>
+  
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex space-x-6 text-white font-medium ml-6">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="projects.html" class="hover:underline">Projects</a>
+        <a href="data.html" class="hover:underline">Data</a>
+        <a href="publications.html" class="hover:underline">Publications</a>
+        <a href="collaborate.html" class="hover:underline">Collaborate</a>
+        <a href="media.html" class="hover:underline">Media</a>
+        <a href="about.html" class="hover:underline">About</a>
+      </nav>
+  
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden px-4 pb-4 hidden space-y-2">
+      <!-- Mobile Search Bar -->
+      <div class="flex space-x-2">
+        <input
+          type="text"
+          placeholder="Search..."
+          class="w-full rounded-md px-3 py-1 text-black focus:outline-none focus:ring-2 focus:ring-blue-300"
+        />
+        <button class="bg-white text-blue-700 px-3 py-1 rounded-md hover:bg-gray-200">
+          Search
+        </button>
+      </div>
+  
+      <!-- Mobile Nav Links -->
+      <a href="index.html" class="block py-2 text-white hover:underline">Home</a>
+      <a href="projects.html" class="block py-2 text-white hover:underline">Projects</a>
+      <a href="data.html" class="block py-2 text-white hover:underline">Data</a>
+      <a href="publications.html" class="block py-2 text-white hover:underline">Publications</a>
+      <a href="collaborate.html" class="block py-2 text-white hover:underline">Collaborate</a>
+      <a href="media.html" class="block py-2 text-white hover:underline">Media</a>
+      <a href="about.html" class="block py-2 text-white hover:underline">About</a>
+    </div>
   </header>
-  <main>
-    <p>This is the beginning of your portfolio website.</p>
-  </main>
+  
+  <!-- JS for Mobile Menu Toggle -->
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+  
+
+  <!-- Hero -->
+  <section class="bg-blue-100 py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold text-blue-900 mb-4">Data-Driven Solutions for Global Impact</h2>
+      <p class="text-lg text-blue-800 mb-6">I'm Jean-Axel Tohougbé, a data-driven international development strategist blending Python, QGIS, and policy analysis to solve complex challenges.</p>
+      <a href="projects.html" class="inline-block bg-blue-700 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-800 transition">View My Work</a>
+    </div>
+  </section>
+
+  <!-- ...[everything else above remains same, starting after Hero section] -->
+
+<!-- Areas of Focus -->
+<section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h3 class="text-2xl font-bold mb-6 text-gray-800">Areas of Focus</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-700">
+        <div class="p-6 bg-white shadow rounded-lg">
+          <h4 class="font-semibold text-lg mb-2">Data-Driven Development</h4>
+          <p class="text-sm">Using Python, R, and SQL to uncover insights for policy, equity, and sustainability.</p>
+        </div>
+        <div class="p-6 bg-white shadow rounded-lg">
+          <h4 class="font-semibold text-lg mb-2">Geospatial Analysis</h4>
+          <p class="text-sm">Leveraging QGIS and satellite data for urban, climate, and energy planning.</p>
+        </div>
+        <div class="p-6 bg-white shadow rounded-lg">
+          <h4 class="font-semibold text-lg mb-2">International Development</h4>
+          <p class="text-sm">Designing strategies for inclusive growth, investment, and global cooperation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Keep rest of homepage (Projects, Footer, etc.) same -->
+  
+
+  <!-- Project Previews -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-8">Featured Projects</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Example iframe project preview -->
+        <div class="border rounded-lg shadow hover:shadow-lg transition">
+          <iframe src="output/interactive_plot.html" class="w-full h-64 rounded-t-lg" loading="lazy"></iframe>
+          <div class="p-4">
+            <h4 class="font-semibold text-lg">Interactive Development Plot</h4>
+            <p class="text-sm text-gray-600">A Plotly-powered data visualization showing development metrics.</p>
+          </div>
+        </div>
+
+        <!-- Placeholder or second project -->
+        <div class="border rounded-lg shadow hover:shadow-lg transition">
+          <iframe src="output/your_map_here.html" class="w-full h-64 rounded-t-lg" loading="lazy"></iframe>
+          <div class="p-4">
+            <h4 class="font-semibold text-lg">QGIS Exported Map</h4>
+            <p class="text-sm text-gray-600">A spatial visualization exported from QGIS showcasing geospatial data.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-6 mt-12">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center">
+      <p class="text-sm text-gray-500">&copy; 2025 Jean-Axel Tohougbé</p>
+      <div class="space-x-4 text-gray-500 mt-2 sm:mt-0">
+        <a href="https://github.com/jeanaxeldesire79" target="_blank" class="hover:text-blue-600">GitHub</a>
+        <a href="mailto:jeanaxel@example.com" class="hover:text-blue-600">Email</a>
+        <a href="#" class="hover:text-blue-600">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
