@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media | AxelDevLab</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white/90 backdrop-blur border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold tracking-tight text-gray-800">AxelDevLab</a>
+      <nav class="space-x-6 text-sm font-medium">
+        <a href="index.html" class="hover:text-yellow-500">Home</a>
+        <a href="projects.html" class="hover:text-yellow-500">Projects</a>
+        <a href="data.html" class="hover:text-yellow-500 transition">Data</a>
+        <a href="publications.html" class="hover:text-yellow-500">Publications</a>
+        <a href="collaborate.html" class="hover:text-yellow-500">Collaborate</a>
+        <a href="media.html" class="text-yellow-500 font-semibold">Media</a>
+        <a href="about.html" class="hover:text-yellow-500">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-slate-50 to-white py-16 text-center px-6">
+    <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Media & Engagement Hub</h1>
+    <p class="max-w-2xl mx-auto text-gray-600 text-lg">
+      Explore visual, audio, and interactive moments from AxelDevLab’s fieldwork, teaching, thought leadership, and global collaborations.
+    </p>
+  </section>
+
+  <!-- Photos -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-bold text-gray-900 mb-4">📸 Field Photos</h2>
+    <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+      <img src="media/photo1.jpg" alt="Workshop" class="rounded-lg shadow hover:scale-105 transition" />
+      <img src="media/photo2.jpg" alt="Training" class="rounded-lg shadow hover:scale-105 transition" />
+      <img src="media/photo3.jpg" alt="Presentation" class="rounded-lg shadow hover:scale-105 transition" />
+    </div>
+  </section>
+
+  <!-- Videos -->
+  <section class="max-w-6xl mx-auto px-6 py-12 bg-gray-50">
+    <h2 class="text-2xl font-bold text-gray-900 mb-4">🎥 Featured Videos</h2>
+    <div class="grid gap-8 md:grid-cols-2">
+      <div class="aspect-w-16 aspect-h-9 rounded overflow-hidden shadow">
+        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID1" title="Keynote Talk" allowfullscreen class="w-full h-full border-none"></iframe>
+      </div>
+      <div class="aspect-w-16 aspect-h-9 rounded overflow-hidden shadow">
+        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID2" title="GIS Tutorial" allowfullscreen class="w-full h-full border-none"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Podcasts -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-bold text-gray-900 mb-4">🎙️ Podcasts</h2>
+    <ul class="space-y-4">
+      <li class="bg-white p-4 rounded shadow hover:shadow-md transition">
+        <strong>Episode 1: Data for Development</strong><br />
+        <audio controls class="mt-2 w-full">
+          <source src="media/podcast1.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+      <li class="bg-white p-4 rounded shadow hover:shadow-md transition">
+        <strong>Episode 2: Policy Meets Geospatial Tech</strong><br />
+        <audio controls class="mt-2 w-full">
+          <source src="media/podcast2.mp3" type="audio/mpeg" />
+        </audio>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Tutorials -->
+  <section class="max-w-6xl mx-auto px-6 py-12 bg-gray-50">
+    <h2 class="text-2xl font-bold text-gray-900 mb-4">🧑🏽‍🏫 Tutorials</h2>
+    <ul class="grid gap-6 md:grid-cols-2">
+      <li class="p-5 bg-white rounded shadow hover:shadow-lg transition">
+        <h3 class="text-lg font-semibold mb-2">Intro to QGIS for Development</h3>
+        <p class="text-sm text-gray-600">Step-by-step lesson using real development data.</p>
+        <a href="tutorials/qgis-intro.html" class="text-yellow-600 hover:underline mt-2 inline-block">View Tutorial →</a>
+      </li>
+      <li class="p-5 bg-white rounded shadow hover:shadow-lg transition">
+        <h3 class="text-lg font-semibold mb-2">Python for Policy Analysis</h3>
+        <p class="text-sm text-gray-600">Using Python libraries to explore global development indicators.</p>
+        <a href="tutorials/python-policy.html" class="text-yellow-600 hover:underline mt-2 inline-block">View Tutorial →</a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Activities -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-bold text-gray-900 mb-4">🗓️ Activities & Highlights</h2>
+    <ul class="space-y-3 text-sm text-gray-700">
+      <li>✅ Led multi-country GIS training for African urban planners.</li>
+      <li>🌍 Panelist at IMF’s Climate & Data Forum 2024.</li>
+      <li>🎤 Guest speaker on AI in international development at DevX Summit.</li>
+    </ul>
+  </section>
+
+  <!-- Other Media -->
+  <section class="max-w-6xl mx-auto px-6 py-12 bg-gray-50">
+    <h2 class="text-2xl font-bold text-gray-900 mb-4">🔗 Other Mentions & Press</h2>
+    <ul class="list-disc pl-5 space-y-2 text-sm text-gray-700">
+      <li><a href="#" class="text-yellow-600 hover:underline">AxelDevLab featured in GIS Watch</a></li>
+      <li><a href="#" class="text-yellow-600 hover:underline">UNDP blog mention on Data Equity</a></li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-sm py-6 text-center">
+    <p>&copy; 2025 AxelDevLab. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

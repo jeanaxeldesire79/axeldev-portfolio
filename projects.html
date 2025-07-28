@@ -1,5 +1,115 @@
-<a href="assets/exports/qgis-map1/index.html" target="_blank">
-    View QGIS Interactive Map
-  </a>
-<a href="assets/plots/plot1.html" target="_blank">View Interactive Plot</a>
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | AxelDevLab</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-white via-slate-100 to-white text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white/90 backdrop-blur border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold tracking-tight text-gray-800">AxelDevLab</a>
+      <nav class="space-x-6 text-sm font-medium">
+        <a href="index.html" class="hover:text-yellow-500 transition">Home</a>
+        <a href="projects.html" class="text-yellow-500 font-semibold">Projects</a>
+        <a href="data.html" class="hover:text-yellow-500 transition">Data</a>
+        <a href="publications.html" class="hover:text-yellow-500 transition">Publications</a>
+        <a href="collaborate.html" class="hover:text-yellow-500 transition">Collaborate</a>
+        <a href="media.html" class="hover:text-yellow-500 transition">Media</a>
+        <a href="about.html" class="hover:text-yellow-500 transition">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-16 px-6 bg-white border-b">
+    <h1 class="text-4xl font-extrabold mb-3 text-gray-900">Projects</h1>
+    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+      Interactive tools, visualizations, and solutions at the intersection of data and development.
+    </p>
+  </section>
+
+  <!-- Project Cards -->
+  <main class="max-w-6xl mx-auto px-6 py-14 grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+
+    <!-- Project 1 -->
+    <div class="bg-white/80 border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition backdrop-blur">
+      <h2 class="text-xl font-semibold text-gray-800 mb-2">Interactive Map of Energy Access in Sub-Saharan Africa</h2>
+      <p class="text-sm text-gray-500 italic mb-2">Geospatial Visualization • 2024</p>
+      <p class="text-gray-700 text-sm leading-relaxed mb-4">
+        This project uses geospatial data to visualize electricity access in rural communities, identifying gaps and guiding infrastructure development efforts.
+      </p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs">QGIS</span>
+        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs">Python</span>
+        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs">Leaflet.js</span>
+      </div>
+      <a href="maps/map1.html" class="inline-block text-sm bg-yellow-400 hover:bg-yellow-500 text-white font-medium px-4 py-2 rounded transition" target="_blank">
+        View Project
+      </a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="bg-white/80 border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition backdrop-blur">
+      <h2 class="text-xl font-semibold text-gray-800 mb-2">Policy Impact Dashboard: Côte d'Ivoire</h2>
+      <p class="text-sm text-gray-500 italic mb-2">Data Dashboard • 2023</p>
+      <p class="text-gray-700 text-sm leading-relaxed mb-4">
+        An interactive dashboard measuring the effectiveness of economic policies and development programs using real-time indicators.
+      </p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs">R Shiny</span>
+        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs">Plotly</span>
+        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs">World Bank Data</span>
+      </div>
+      <a href="#" class="inline-block text-sm bg-yellow-400 hover:bg-yellow-500 text-white font-medium px-4 py-2 rounded transition">
+        View Dashboard
+      </a>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="bg-white/80 border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition backdrop-blur">
+      <h2 class="text-xl font-semibold text-gray-800 mb-2">Global Development Tracker</h2>
+      <p class="text-sm text-gray-500 italic mb-2">Data Visualization • 2023</p>
+      <p class="text-gray-700 text-sm leading-relaxed mb-4">
+        This tool aggregates development finance data across multiple countries, highlighting funding trends and regional priorities.
+      </p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs">SQL</span>
+        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs">Python</span>
+        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs">Tableau</span>
+      </div>
+      <a href="#" class="inline-block text-sm bg-yellow-400 hover:bg-yellow-500 text-white font-medium px-4 py-2 rounded transition">
+        View Visualization
+      </a>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="bg-white/80 border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-lg transition backdrop-blur">
+      <h2 class="text-xl font-semibold text-gray-800 mb-2">Urban Growth Predictive Model</h2>
+      <p class="text-sm text-gray-500 italic mb-2">Machine Learning • 2024</p>
+      <p class="text-gray-700 text-sm leading-relaxed mb-4">
+        Predictive analytics model forecasting urban expansion patterns in West African cities using satellite imagery and census data.
+      </p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs">Python</span>
+        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs">TensorFlow</span>
+        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs">GeoPandas</span>
+      </div>
+      <a href="#" class="inline-block text-sm bg-yellow-400 hover:bg-yellow-500 text-white font-medium px-4 py-2 rounded transition">
+        View Project
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-sm py-6 text-center">
+    <p>&copy; 2025 AxelDevLab. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
